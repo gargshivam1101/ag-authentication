@@ -11,6 +11,7 @@ vehiclesTable = dynamodb.Table(dbTableName)
 bucket = 'ag-auth-vehicle'
 
 def lambda_handler(event, context):
+    print("Code updated!")
     print(event)
     key = event['queryStringParameters']['objectKey']
     
